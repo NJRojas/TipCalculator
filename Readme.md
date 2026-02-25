@@ -8,7 +8,7 @@ The app provides an intuitive tipping experience with real-time calculations and
 
 ## Final UI
 
-![Tip Calculator UI](TipCalculator.png)
+![Tip Calculator UI](Documentaion/TipCalculator.png)
 
 ---
 
