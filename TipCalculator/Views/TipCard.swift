@@ -53,7 +53,7 @@ struct TipCard: View {
             header
             subtotalRow
             TipSection(
-                bill: billText,
+                bill: bill,
                 selectedTip: $selectedTip,
                 showCustomTipSheet: $showCustomTipSheet,
                 customTipPercent: $customTipPercent,
@@ -105,7 +105,7 @@ struct TipCard: View {
                         .foregroundStyle(.white.opacity(0.9))
                         .frame(minWidth: 110, alignment: .trailing)
                 }
-                EditButton(action: { isEditingBill.toggle() })
+                EditButton { isEditingBill.toggle() }
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 10)
