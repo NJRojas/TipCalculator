@@ -15,11 +15,12 @@ struct BottomPanel: View {
 
     var body: some View {
         VStack(spacing: 12) {
+            /* To be implemented...
             HStack {
                 Spacer()
                 ShareButton()
             }
-
+             */
             Text(totalPerPerson.formatCurrency())
                 .font(.system(size: 44, weight: .bold, design: .rounded))
                 .foregroundStyle(.white.opacity(0.95))

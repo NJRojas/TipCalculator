@@ -14,7 +14,7 @@ struct TipSection: View {
     @Binding var showCustomTipSheet: Bool
     @Binding var customTipPercent: Double
 
-    private let presetPercents: [Int] = [10, 15, 18, 20, 25]
+    private let presetPercents: [Int] = [5, 10, 15, 20, 25]
 
     private var tipPercent: Int {
         switch selectedTip {
