@@ -35,7 +35,7 @@ struct EditButton: View {
 
 #Preview {
     VStack {
-        EditButton(action: { })
+        EditButton { }
     }
     .background(Color.green.opacity(0.8))
 }

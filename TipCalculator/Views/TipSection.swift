@@ -9,12 +9,12 @@ import SwiftUI
 
 struct TipSection: View {
     
-    let bill: String
+    let bill: Double
     @Binding var selectedTip: TipChoice
     @Binding var showCustomTipSheet: Bool
     @Binding var customTipPercent: Double
 
-    private let presetPercents: [Int] = [10, 15, 18, 20, 25]
+    private let presetPercents: [Int] = [5, 10, 15, 20, 25]
 
     private var tipPercent: Int {
         switch selectedTip {
@@ -57,14 +57,14 @@ struct TipSection: View {
     }
 
     private func subtitle(percent: Double) -> String {
-        (bill.parseAmount() * percent / 100.0).formatCurrency()
+        (bill * percent / 100.0).formatCurrency()
     }
 }
 
 #Preview {
     VStack {
         TipSection(
-            bill: "100",
+            bill: 100,
             selectedTip: .constant(.preset(10)),
             showCustomTipSheet: .constant(true),
             customTipPercent: .constant(10)
